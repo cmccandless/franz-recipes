@@ -1,0 +1,11 @@
+#!/bin/sh
+
+DEV_RECIPES=~/.config/franz/recipes/dev
+
+mklink()
+{
+    RECIPE=$1
+    ln -s $RECIPE $DEV_RECIPES/$RECIPE
+}
+
+mkdir -p $DEV_RECIPES
