@@ -1,16 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 DEV_RECIPES=~/.config/Franz/recipes/dev
 
 mklink()
 {
     RECIPE=$1
-    if [ -d $DEV_RECIPES/$RECIPE ]; then
-        ln -s $RECIPE $DEV_RECIPES/$RECIPE
+    TARGET="$DEV_RECIPES/$RECIPE"
+    if [ -d $TARGET ] || [ -L $TARGET ]; then
+        echo "Skipping $RECIPE"
+    else
+        echo "Installing $RECIPE"
+        ln -s $(readlink -m $RECIPE) $DEV_RECIPES/$RECIPE
     fi
 }
 
 mkdir -p $DEV_RECIPES
-mklink android-messages
-mklink google-play-music
-mklink netflix
+for RECIPE in $(ls -d ./*/ | cut -d'/' -f 2); do
+    mklink $RECIPE
+done
