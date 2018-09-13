@@ -1,11 +1,13 @@
 #!/bin/sh
 
-DEV_RECIPES=~/.config/franz/recipes/dev
+DEV_RECIPES=~/.config/Franz/recipes/dev
 
 mklink()
 {
     RECIPE=$1
-    ln -s $RECIPE $DEV_RECIPES/$RECIPE
+    if [ -d $DEV_RECIPES/$RECIPE ]; then
+        ln -s $RECIPE $DEV_RECIPES/$RECIPE
+    fi
 }
 
 mkdir -p $DEV_RECIPES
