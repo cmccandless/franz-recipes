@@ -1,6 +1,6 @@
 {
     "id": "gmusic",
-    "name": "gmusic",
+    "name": "Google Play Music",
     "version": "1.0.0",
     "description": "Google Play Music",
     "main": "index.js",
