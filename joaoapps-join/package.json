@@ -1,0 +1,12 @@
+{
+    "id": "joaoapps-join",
+    "name": "Join",
+    "version": "1.0.0",
+    "description": "Join",
+    "main": "index.js",
+    "author": "Corey McCandless <crm1994@gmail.com>",
+    "license": "MIT",
+    "config": {
+        "serviceURL": "https://joinjoaomgcd.appspot.com/"
+    }
+}
