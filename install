@@ -11,3 +11,4 @@ mklink()
 mkdir -p $DEV_RECIPES
 mklink android-messages
 mklink google-play-music
+mklink netflix

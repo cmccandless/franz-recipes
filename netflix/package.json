@@ -1,0 +1,12 @@
+{
+    "id": "netflix",
+    "name": "Netflix",
+    "version": "1.0.0",
+    "description": "Netflix",
+    "main": "index.js",
+    "author": "Corey McCandless <crm1994@gmail.com>",
+    "license": "MIT",
+    "config": {
+        "serviceURL": "http://www.netflix.com"
+    }
+}
