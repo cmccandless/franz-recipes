@@ -1,12 +1,12 @@
 {
   "id": "android-messages",
   "name": "Android Messages",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Android Messages",
   "main": "index.js",
   "author": "Corey McCandless <crm1994@gmail.com>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://messages.android.com"
+    "serviceURL": "https://messages.google.com/web"
   }
 }
